@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppContext } from '../infrastructure/app.context';
 
 @Component({
   selector: 'app-root',
