@@ -20,7 +20,7 @@ export class BreadCrumbItemComponent {
     onSelectedOption: EventEmitter<BreadCrumbItemOption> = new EventEmitter<BreadCrumbItemOption>();
 
     newFolder() {
-        this.onSelectedOption.emit({ Name: "New folder", Option: OPTION_NEW_FOLDER, Data: null });
+        this.onSelectedOption.emit({ Name: "Nueva carpeta", Option: OPTION_NEW_FOLDER, Data: null });
     }
 
     select() {
@@ -28,7 +28,7 @@ export class BreadCrumbItemComponent {
     }
 
     uploadFiles($event) {
-        this.onSelectedOption.emit({ Name: "Upload files", Option: OPTION_UPLOAD_FILES, Data: $event.target.files })
+        this.onSelectedOption.emit({ Name: "Subir archivos", Option: OPTION_UPLOAD_FILES, Data: $event.target.files })
     }
 
 
